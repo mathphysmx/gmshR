@@ -8,7 +8,7 @@ To install run in R command line:
 # install.packages("devtools") # install this if not installed already
 devtools::install_github("mathphysmx/gmshR")
 ```
-# See also the meshing functions in the followin packages:
+# See also the meshing functions in the following packages:
 - [fdaPDE](https://cran.r-project.org/web/packages/fdaPDE/index.html)
 - [mvmesh](https://cran.r-project.org/web/packages/mvmesh/index.html)
 - [RTriangle](https://cran.r-project.org/web/packages/RTriangle/index.html)
