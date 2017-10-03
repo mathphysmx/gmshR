@@ -1,5 +1,7 @@
 #' @title Utility to make .geo (gmsh) format
 #'
+#' @description Utility to make .geo (gmsh) format
+#'
 #' @details See \link{dfn2geo} code for an example on how to write the output of this function to a file. See http://gmsh.info/doc/texinfo/gmsh.html#Geometry-commands
 #' @param ent Character representing gmsh entities. Possible options are:
 #' "p" = Points

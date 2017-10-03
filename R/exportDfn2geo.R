@@ -1,5 +1,7 @@
 #' @title dfn to gmsh .geo file generation
 #'
+#' @description dfn to gmsh .geo file generation
+#'
 #' @param dfn data frame of line segments ends coordinates.
 #' @param bdry 2-columns table (data.frame, matrix, array). The first column are the x coordinates and the 2nd column the y coordinates of the open polygon.
 #' @param cl cl Numeric scalar. Characteristic length of gmsh. It tunes up the meshing.
@@ -35,7 +37,7 @@ exportDfn2geo <- function(dfn, bdry, cl, file){
 		   file, add = T)
 	dfn2geo(x = dfn, cl, idStart=1,
 		file, add = T)
-	
+
 	idLine <- paste(1:nf, collapse= ',')
 	ind <- paste0('Line{', 1,':', nf,'} In Surface{1};')
 	write(ind, file = file, append = T)

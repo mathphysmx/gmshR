@@ -13,10 +13,15 @@ dfn2geo(x, cl = 0.1, file = "dfn.geo", idStart = 1, add = FALSE)
 
 \item{file}{The name of the (possibly exported) .geo file.}
 
+\item{idStart}{Non-negative integer scalar. This value is the first identification number (ID) for the geometric elements to be written to file.}
+
 \item{add}{This helps to save the DFN.geo to a file}
 }
 \value{
 If \code{add}, a file named <file>.
+}
+\description{
+Line Segments to gmsh .geo format export
 }
 \details{
 To mesh the .geo files in the examples, see \link{exportDfn2geo}. To view this .geo <file> in gmsh software, go to the directory, then run in the terminal \code{gmsh <fileWithExtension>}.

@@ -18,6 +18,9 @@ exportDfn2geo(dfn, bdry, cl, file)
 \value{
 A file named <file>.
 }
+\description{
+dfn to gmsh .geo file generation
+}
 \details{
 To mesh the .geo files in the examples, go to the <file> directory, and run in the terminal \code{gmsh -2 <file>}. To view run in the terminal \code{gmsh -2 <file>.geo <file>.msh}.
 }

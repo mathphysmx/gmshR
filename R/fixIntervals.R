@@ -1,5 +1,7 @@
 #' @title Fix interval to be increasingly ordered
 #'
+#' @description Fix interval to be increasingly ordered
+#'
 #' @param x0 Numeric vector. Left value of the interval (pair coordinates).
 #' @param x1 Numeric vector. Right value of the interval (pair coordinates).
 #'

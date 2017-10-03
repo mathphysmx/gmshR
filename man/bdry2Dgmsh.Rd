@@ -13,10 +13,15 @@ bdry2Dgmsh(x, cl = 0.1, file = "dfnBdry.geo", idStart = 1, add = FALSE)
 
 \item{file}{The name of the exported .geo file.}
 
+\item{idStart}{Non-negative integer scalar. This value is the first identification number (ID) for the geometric elements to be written to file.}
+
 \item{add}{This helps to save the DFN.geo to a file}
 }
 \value{
 If \code{add}, a file named <file>.
+}
+\description{
+Export polygon points (vertices) to a gmsh .geo file
 }
 \details{
 The polygonal boundary does not need to enclose all the gmsh elements; but the meshing will only be made inside the polygon. See examples.
@@ -28,7 +33,7 @@ plot(x, type='l', col = 'blue')
 bdry2Dgmsh(x)
 
 # Another saving-to-file example
-bdry2Dgmsh(x, idStart = 11)
+bdry2Dgmsh(x, idStart = 10001)
 write('// This is another file', file = "newBdry.geo")
 bdry2Dgmsh(x, file = 'newBdry.geo', add = TRUE)
 }

@@ -12,6 +12,9 @@ intervaLims(x)
 \value{
 A m x 2 matrix with each row giving the limits of one interval.
 }
+\description{
+Vector conversion to m x 2 matrix of interval limits
+}
 \details{
 This code was implemented having in mind a mixture of disjoint uniform distributions.
 }

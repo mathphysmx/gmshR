@@ -1,8 +1,11 @@
 #' @title Export polygon points (vertices) to a gmsh .geo file
 #'
+#' @description Export polygon points (vertices) to a gmsh .geo file
+#'
 #' @param x 2-columns table (data.frame, matrix, array). The first column are the x coordinates and the 2nd column the y coordinates of the open polygon.
 #' @param cl Numeric scalar. Characteristic length of gmsh. It tunes up the meshing.
 #' @param file The name of the exported .geo file.
+#' @param idStart Non-negative integer scalar. This value is the first identification number (ID) for the geometric elements to be written to file.
 #' @param add This helps to save the DFN.geo to a file
 #'
 #' @details The polygonal boundary does not need to enclose all the gmsh elements; but the meshing will only be made inside the polygon. See examples.
@@ -17,12 +20,12 @@
 #' bdry2Dgmsh(x)
 #'
 #' # Another saving-to-file example
-#' bdry2Dgmsh(x, idStart = 11)
+#' bdry2Dgmsh(x, idStart = 10001)
 #' write('// This is another file', file = "newBdry.geo")
 #' bdry2Dgmsh(x, file = 'newBdry.geo', add = TRUE)
 bdry2Dgmsh <- function(x, cl=0.1, file="dfnBdry.geo",
 			idStart = 1, add = FALSE){
-	
+
 	x <- cbind(x, 0, 'cl')
 	n <- nrow(x)
 	idEnd <- idStart + n - 1

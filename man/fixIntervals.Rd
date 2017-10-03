@@ -14,6 +14,9 @@ fixIntervals(x0, x1)
 \value{
 A data.frame with columns \code{xl} and \code{xu}, the lower and upper values. Each row is sorted increasingly.
 }
+\description{
+Fix interval to be increasingly ordered
+}
 \examples{
 xl <- c(-1, 0.3, -4,  2)
 xu <- c( 1,   1, -2, -3)

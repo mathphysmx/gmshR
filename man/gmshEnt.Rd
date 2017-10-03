@@ -12,9 +12,10 @@ gmshEnt(ent = "p", id = 1, ele = 2)
 "l" = Line
 "ll" = Line Loop
 "ps" = "Plane Surface",
-"pp" = Physical Point
-"pl" = Physical Line
-"pl" = Physical Surface}
+"Pp" = Physical Point
+"Pl" = Physical Line
+"Ps" = Physical Surface
+"Pv" = Physical Volume}
 
 \item{id}{Identification number.}
 
@@ -23,8 +24,11 @@ gmshEnt(ent = "p", id = 1, ele = 2)
 \value{
 A character vector. See examples.
 }
+\description{
+Utility to make .geo (gmsh) format
+}
 \details{
-See \link{dfn2geo} code for an example on how to write the output of this function to a file.
+See \link{dfn2geo} code for an example on how to write the output of this function to a file. See http://gmsh.info/doc/texinfo/gmsh.html#Geometry-commands
 }
 \examples{
 gmshEnt(en="p", id = 1:2, ele=3:4)
