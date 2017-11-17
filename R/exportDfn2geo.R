@@ -14,7 +14,8 @@
 #'
 #' @examples
 #'# Example 1
-#' bdry <- cbind(x = c(1,6,6,0), y = c(1,0,3, 3))
+#'loweLeftrCorner <- -1
+#'bdry <- cbind(x = c(loweLeftrCorner,6,6,0), y = c(loweLeftrCorner,0,3, 3))
 #' data(dfn)
 #' exportDfn2geo(dfn, bdry, cl = 0.1, file = 'dfn.geo')
 #'
